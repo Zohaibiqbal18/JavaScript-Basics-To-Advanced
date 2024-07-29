@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+    <script>
+
+        //Only use var if you MUST support old browsers.
+        //You declare a JavaScript variable with the var
+        //After the declaration, the variable has no value (technically it is undefined).
+        var a;
+        document.write(a);  //Use document,write for testing purposes only
+
+        //Variables declared with var can be updated.
+        var b = 99;
+        var b = 100;
+        document.write("<br>",b);
+        
+        //Variables declared with var can be re-declare.
+        var c = "Olympics";
+        var c;
+        document.write("<br>", c)
+
+        //var declarations are hoisted to the top of their scope, meaning they are accessible before their actual line of declaration but will be undefined until they are assigned a value
+        document.write("<br>", Medal)
+        var Medal;
+        Medal = "Gold"
+        document.write("<br>", Medal)
+
+
+    </script>
+</head>
+<body>
+    <h1>var</h1>
+</body>
+</html>
