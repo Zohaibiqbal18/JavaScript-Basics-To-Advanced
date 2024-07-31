@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>const variable</title>
+    <script>
+        //You declare a JavaScript variable with the const
+        //JavaScript const variables must be assigned a value when they are declared
+        const a = 33;
+        document.write(a)
+
+        //Variables declared with const cannot be update
+        const b = 44;  //error will be shown in console
+        b = 77;
+        document.write(b)
+
+        //Variables declared with const cannot be re-declare.
+        const c = 99;
+        //const c = 88: //cannot do this in same scope
+    
+        //Variables defined with const are hoisted to the top, but not initialized
+        document.write("<br>", Medal) // Refrence error
+        const Medal = "Bronze";
+        document.write(Medal)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
