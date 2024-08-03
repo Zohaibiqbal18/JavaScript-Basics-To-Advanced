@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control Structure</title>
+    <script>
+
+        let score = 80;
+        if (score > 70){
+            document.write("Grade B");
+        }else if(score > 75){
+            document.write("Grade A-");
+        }else{
+            document.write("try again");
+        }
+
+        let day = 3;
+        let dayname;
+        switch(day){
+            case 1:
+                dayname = "Monday";
+                break;
+            case 2:
+                dayname = "Tuesday";
+                break;
+            case 3:
+                dayname = "wednesday";
+                break;
+            default:
+                dayname = "Invalid";
+        }
+        document.write("<br>", dayname)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
